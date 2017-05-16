@@ -18,5 +18,6 @@ public:
 	~Person();
 
 	void SayHello();
-
+	void DisplayName();
+	void DisplayAge();
 };

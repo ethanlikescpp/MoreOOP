@@ -11,4 +11,6 @@ class Student:
 public:
 	Student();
 	~Student();
+	Student(string, string);
+	Student(string, string, int);
 };

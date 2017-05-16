@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include <iostream>
+#include <string>
 #include "Person.h"
 
 using namespace std;
@@ -23,4 +24,12 @@ Person::Person(string fName, string lName, int theage) {
 
 void Person::SayHello() {
 	cout << "Hello World" << endl;
+}
+
+void Person::DisplayName() {
+	cout << "Person's name: " << firstName + " " + lastName << endl;
+}
+
+void Person::DisplayAge() {
+	cout << "Person's age: " << age << endl;
 }

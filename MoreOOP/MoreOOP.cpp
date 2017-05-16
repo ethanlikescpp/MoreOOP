@@ -3,15 +3,17 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include<string>
 #include "Person.h"
 #include "Student.h"
 
 
 int main()
 {
-	Student student1;
-	student1.SayHello();
+	Student student1("John", "Doe", 21);
 
+	student1.DisplayName();
+	student1.DisplayAge();
 
     return 0;
 }

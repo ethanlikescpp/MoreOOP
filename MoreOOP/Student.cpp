@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include <iostream>
+#include <string>
 #include "Person.h"
 #include "Student.h"
 
@@ -11,5 +12,10 @@ Student::Student() {
 Student::~Student() {
 }
 
-Student::Student():Person("John", "Doe") {
+Student::Student(string fName, string lName): Person(fName, lName)
+{
+}
+
+Student::Student(string fName, string lName, int age) : Person(fName, lName, age)
+{
 }
