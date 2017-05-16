@@ -6,9 +6,13 @@
 using namespace std;
 
 class Person {
+	friend void DisplayFirstName(Person & firstName);
+
 private:
 	string firstName;
 	string lastName;
+
+protected:
 	int age;
 
 public:
@@ -18,6 +22,6 @@ public:
 	~Person();
 
 	void SayHello();
-	void DisplayName();
-	void DisplayAge();
+	string DisplayName();
+	//void DisplayAge();
 };

@@ -13,4 +13,6 @@ public:
 	~Student();
 	Student(string, string);
 	Student(string, string, int);
+
+	int DisplayTheAge();
 };

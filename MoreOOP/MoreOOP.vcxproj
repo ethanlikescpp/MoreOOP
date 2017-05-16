@@ -138,12 +138,16 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Body.h" />
+    <ClInclude Include="Handle.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Body.cpp" />
+    <ClCompile Include="Handle.cpp" />
     <ClCompile Include="MoreOOP.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="stdafx.cpp">

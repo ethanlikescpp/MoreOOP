@@ -19,3 +19,7 @@ Student::Student(string fName, string lName): Person(fName, lName)
 Student::Student(string fName, string lName, int age) : Person(fName, lName, age)
 {
 }
+
+int Student::DisplayTheAge() {
+	return this->age;
+}

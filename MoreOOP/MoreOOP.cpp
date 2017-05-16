@@ -12,8 +12,9 @@ int main()
 {
 	Student student1("John", "Doe", 21);
 
-	student1.DisplayName();
-	student1.DisplayAge();
+	cout << "Name of student: " << student1.DisplayName() << endl;
+	cout << "Age of student: " << student1.DisplayTheAge() << endl;
+	DisplayFirstName(student1);
 
     return 0;
 }
