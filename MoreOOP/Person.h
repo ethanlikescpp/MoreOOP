@@ -6,7 +6,7 @@
 using namespace std;
 
 class Person {
-	friend void DisplayFirstName(Person & firstName);
+	friend void DisplayFirstName(Person &);
 
 private:
 	string firstName;

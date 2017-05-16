@@ -30,8 +30,8 @@ string Person::DisplayName() {
 	return this->firstName + " " + this->lastName;
 }
 
-void DisplayFirstName(Person & firstName) {
-	cout << "First name: " << &firstName << endl;
+void DisplayFirstName(Person &) {
+	//cout << "First name: " << firstName << endl;
 }
 
 /*

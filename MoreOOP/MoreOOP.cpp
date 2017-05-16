@@ -6,6 +6,7 @@
 #include<string>
 #include "Person.h"
 #include "Student.h"
+#include "Handle.h"
 
 
 int main()
@@ -15,6 +16,11 @@ int main()
 	cout << "Name of student: " << student1.DisplayName() << endl;
 	cout << "Age of student: " << student1.DisplayTheAge() << endl;
 	DisplayFirstName(student1);
+
+	Handle h;
+	h.someOps();
+
+	cout << "Handle holds " << h.DisplayNum() << endl;
 
     return 0;
 }
