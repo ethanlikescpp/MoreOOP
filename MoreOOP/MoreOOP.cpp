@@ -7,6 +7,8 @@
 #include "Person.h"
 #include "Student.h"
 #include "Handle.h"
+#include "StudentA.h"
+#include "PersonA.h"
 
 
 int main()
@@ -19,8 +21,11 @@ int main()
 
 	Handle h;
 	h.someOps();
-
 	cout << "Handle holds " << h.DisplayNum() << endl;
+
+	PersonA someguy("John Smith", 23);
+
+	someguy.display();
 
     return 0;
 }
