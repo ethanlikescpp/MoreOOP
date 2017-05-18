@@ -9,11 +9,12 @@ class Person {
 	friend void DisplayFirstName(Person &);
 
 private:
-	string firstName;
-	string lastName;
+	
 
 protected:
 	int age;
+	string firstName;
+	string lastName;
 
 public:
 	Person();

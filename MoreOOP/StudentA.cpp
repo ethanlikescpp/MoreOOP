@@ -2,12 +2,21 @@
 #include <iostream>
 #include <string>
 #include "StudentA.h"
-#include "PersonA.h"
+#include "Person.h"
 
 using namespace std;
 
-void StudentA::display() {
-	PersonA::display();
+StudentA::StudentA() {
+}
 
-	cout << course << endl;
+StudentA::~StudentA() {
+}
+
+
+
+
+void StudentA::display() {
+	Person::SayHello();
+	Person::DisplayName();
+
 }

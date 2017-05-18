@@ -11,6 +11,12 @@
 #include "PersonA.h"
 
 
+class SomeStudent: public Person {
+public:
+	
+};
+
+
 int main()
 {
 	Student student1("John", "Doe", 21);
@@ -23,9 +29,9 @@ int main()
 	h.someOps();
 	cout << "Handle holds " << h.DisplayNum() << endl;
 
-	PersonA someguy("John Smith", 23);
+	
 
-	someguy.display();
+	
 
     return 0;
 }

@@ -3,15 +3,15 @@
 #include "stdafx.h"
 #include <iostream>
 #include <string>
-#include "PersonA.h"
+#include "Person.h"
 
 using namespace std;
 
-class StudentA :public PersonA 
+class StudentA :public Person 
 {
-private:
-	string course;
-
 public:
-	virtual void display();
+	StudentA();
+	~StudentA();
+	void display();		
+	
 };
