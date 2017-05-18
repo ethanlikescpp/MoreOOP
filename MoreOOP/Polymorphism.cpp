@@ -7,45 +7,34 @@ using namespace std;
 
 
 class Enemy {
-protected:
-	int attackpower;
-
 public:
-	void setattackpower(int a) {
-		attackpower = a;
+	virtual void attack() {
+		cout << "Something";
 	}
 };
 
 class Ninja: public Enemy {
 public:
 	void attack() {
-		cout << "Ninja inflicts damage of " << attackpower << endl;
+		cout << "Ninja attack!" << endl;
 	}
 };
 
-class Monster : public Enemy {
-public:
+class Monster: public Enemy {
 	void attack() {
-		cout << "Monster inflicts damage of " << attackpower << endl;
+		cout << "Monster attack!" << endl;
 	}
 };
 
 
 int main() {
+	Ninja n;
+	Monster m;
+	Enemy *enemy1 = &n;
+	Enemy *enemy2 = &m;
 
-	Ninja joe;
-	Monster shrek;
-
-	Enemy *enemy1 = &joe;
-
-	joe.setattackpower(3);
-	joe.attack();
-
-	shrek.setattackpower(50);
-	shrek.attack();
-
-	enemy1->setattackpower(20);
-	joe.attack();
+	enemy1->attack();
+	enemy2->attack();
 
 	return 0;
 }
