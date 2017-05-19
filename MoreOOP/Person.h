@@ -6,7 +6,7 @@
 using namespace std;
 
 class Person {
-	friend void DisplayFirstName(Person &);
+	
 
 private:
 	
@@ -20,9 +20,11 @@ public:
 	Person();
 	Person(string fName, string lName);
 	Person(string fName, string lName, int age);
-	~Person();
+	virtual ~Person();
 
-	void SayHello();
+	virtual void SayHello();
+	virtual void display();
+	
 	string DisplayName();
-	//void DisplayAge();
+	void DisplayAge();
 };

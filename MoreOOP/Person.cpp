@@ -27,15 +27,13 @@ void Person::SayHello() {
 }
 
 string Person::DisplayName() {
-	return this->firstName + " " + this->lastName;
+	return this->firstName + " " + this->lastName << endl;
 }
 
-void DisplayFirstName(Person &) {
-	//cout << "First name: " << firstName << endl;
-}
-
-/*
 void Person::DisplayAge() {
-	cout << "Person's age: " << age << endl;
+	cout << "Person's age: " << this->age << endl;
 }
-*/
+
+void Person::display() {
+	cout << firstName << ", " << age << endl;
+}

@@ -9,9 +9,13 @@ using namespace std;
 
 class StudentA :public Person 
 {
+private:
+	string course;
+
 public:
 	StudentA();
 	~StudentA();
-	void display();		
-	
+	StudentA(string & name, int age, string & course);
+	virtual void display();		
+	virtual void SayHello();
 };

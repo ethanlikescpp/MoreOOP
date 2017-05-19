@@ -3,7 +3,7 @@
 
 #include "stdafx.h"
 #include <iostream>
-#include<string>
+#include <string>
 #include "Person.h"
 #include "Student.h"
 #include "Handle.h"
@@ -13,7 +13,9 @@
 
 class SomeStudent: public Person {
 public:
-	
+	virtual void SayHello() {
+		cout << "Hello!" << endl;
+	}
 };
 
 
@@ -21,18 +23,21 @@ int main()
 {
 	Student student1("John", "Doe", 21);
 
+	student1.SayHello();
+
 	cout << "Name of student: " << student1.DisplayName() << endl;
 	cout << "Age of student: " << student1.DisplayTheAge() << endl;
-	DisplayFirstName(student1);
+
+	student1.display();
+
 
 	Handle h;
 	h.someOps();
 	cout << "Handle holds " << h.DisplayNum() << endl;
 
+	StudentA joe;
+	joe.SayHello();
 	
-
-	
-
     return 0;
 }
 
